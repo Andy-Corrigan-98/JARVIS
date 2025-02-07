@@ -1,0 +1,8 @@
+# JARVIS Project CODEOWNERS
+# Each line is a file pattern followed by one or more owners.
+# Order is important; the last matching pattern takes precedence.
+
+# Default owners for everything in the repo (Think of this as the project admins, they own EVERYTHING and have the final say on any PR)
+* @Andy-Corrigan-98
+
+# Area specific owners (these will be able to act as PRs review authorities in their areas but if the PR is in a gray area, the CODEOWNERS above this line will have the final say)
