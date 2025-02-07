@@ -34,6 +34,70 @@ View [features/done/](changelog/features/done/) for completed features.
 - Keep It Simple (KISS principle)
 - Document your changes appropriately
 
+### Commit Message Guidelines
+Our commit messages follow a structured format to maintain clarity and consistency:
+
+#### Format
+```
+<type>(<scope>): <subject>
+
+<body>
+
+<footer>
+```
+
+#### Types
+- `feat`: A new feature
+- `fix`: A bug fix
+- `docs`: Documentation changes
+- `style`: Code style changes (formatting, missing semi-colons, etc)
+- `refactor`: Code changes that neither fix a bug nor add a feature
+- `test`: Adding or modifying tests
+- `chore`: Changes to build process or auxiliary tools
+
+#### Scope
+The scope should be the area of the codebase affected (e.g., docs, core, api)
+
+#### Subject
+- Use imperative, present tense: "add" not "added" or "adds"
+- Don't capitalize first letter
+- No period (.) at the end
+- Keep it under 50 characters
+
+#### Body (optional)
+- Use imperative, present tense
+- Include motivation for change and contrast with previous behavior
+- Wrap at 72 characters
+
+#### Footer (optional)
+- Reference issues and PRs
+- Note breaking changes
+- Format: `BREAKING CHANGE: <description>`
+
+#### Examples
+```
+feat(auth): add user authentication endpoint
+
+Implement JWT-based authentication for API endpoints.
+Includes user login and token refresh functionality.
+
+Closes #123
+```
+
+```
+fix(api): resolve data race in concurrent requests
+
+Multiple simultaneous requests were causing inconsistent
+state updates. Added mutex lock to prevent race condition.
+```
+
+```
+docs(readme): update installation instructions
+
+Update package installation steps to include new dependencies
+and configuration options.
+```
+
 ### Project Structure
 ```
 project-root/
