@@ -4,13 +4,13 @@
 Create a simple, modern public-facing website using React to showcase the JARVIS project, its vision, and core principles. The initial implementation will focus on a local development environment to allow developers to preview and contribute to the website.
 
 ## Status
-Current status: Backlog
-Target Release: TBD
+Current status: In Progress
+Target Release: 1.0.0
 
 ### State Changes
 - Proposed: 2025-02-08
-- Approved: TBD
-- Started: TBD
+- Approved: 2025-02-08
+- Started: 2025-02-08
 - Completed/Archived: TBD
 
 ## Details
@@ -61,10 +61,9 @@ Develop a React-based website that initially runs locally for development purpos
 
 ## Timeline
 - Proposed: 2025-02-08
-- Approved: TBD
-- Started: TBD
+- Approved: 2025-02-08
+- Started: 2025-02-08
 - Completed: TBD
-
 
 ## Related
 - Documentation: README.md
