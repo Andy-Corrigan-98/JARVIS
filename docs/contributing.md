@@ -99,17 +99,25 @@ and configuration options.
 ```
 
 ### Project Structure
+
+The repository follows a simple monorepo structure:
+
 ```
-project-root/
-├── src/                    # Source code
-├── tests/                  # Test files
-├── docs/                   # Documentation
-│   ├── technical/         # Technical documentation
-│   ├── changelog/         # Version history and changes
-│   └── contributing.md    # This file
-├── config/                # Configuration files
-└── scripts/               # Utility scripts
+/
+├── .github/         # GitHub specific files
+├── docs/           # Project-wide documentation
+├── frontend/       # Frontend applications
+├── backend/        # Backend services
+├── common/         # Shared libraries and utilities
+└── utility/        # Developer tools and scripts
 ```
+
+Each project within these directories contains:
+- `docs/` - Project-specific documentation
+- `src/` - Source code
+- `tests/` - Test files
+- `config/` - Configuration files
+- `scripts/` - Project-specific utility scripts
 
 ## Feature Development Process
 

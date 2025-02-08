@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# JARVIS Public-Facing Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the source code for the JARVIS project's public-facing website. Built with React, this website showcases our project's vision, core principles, and features in a modern, accessible interface.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+The JARVIS website serves as the primary platform to:
+- Communicate our project vision and core principles
+- Showcase key features and capabilities
+- Provide easy access to project documentation
+- Foster community engagement and contribution
 
-### `npm start`
+## Development Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prerequisites
+- Node.js (latest LTS version recommended)
+- npm (comes with Node.js)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Getting Started
 
-### `npm test`
+1. Clone the repository
+2. Navigate to the project directory:
+   ```
+   cd frontend/jarvis-website
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Available Scripts
 
-### `npm run build`
+#### `npm start`
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000).
+The page will automatically reload when you make changes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### `npm test`
+Launches the test runner in interactive watch mode.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### `npm run build`
+Builds the app for production to the `build` folder, optimizing for best performance.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+The website features:
+- Modern, responsive design
+- Clear navigation structure
+- Comprehensive project information
+- Documentation integration
+- Accessibility-first approach
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contributing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+We welcome contributions! Please see our [Contributing Guide](../../docs/contributing.md) for details on how to get involved.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Development Standards
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This project follows established development standards and best practices. For more information, please refer to our [Development Standards](../../docs/technical/development-standards.md) documentation.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Project Documentation](../../docs/)
+- [Technical Documentation](../../docs/technical/)
+- [Changelog](../../docs/changelog/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+
+[Add your license information here]

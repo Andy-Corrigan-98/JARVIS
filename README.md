@@ -48,6 +48,20 @@ While JARVIS does not aim to achieve artificial general intelligence (AGI), we p
 
 My commitment is to develop JARVIS as a force for good, with security and privacy fundamentals built in from the start. Being open-source allows the GitHub community to ensure JARVIS develops safely and securely, benefiting from collective expertise and oversight.
 
+## Public-Facing Website
+
+Our project website, built with React, provides an interactive and accessible platform to:
+- Explore JARVIS's vision and capabilities
+- Access comprehensive documentation
+- Learn how to get involved
+- Stay updated with project developments
+
+Visit the website's repository at [`frontend/jarvis-website/`](frontend/jarvis-website/) to:
+- View the source code
+- Contribute to the website
+- Run a local development instance
+- Learn about our web development standards
+
 ## Documentation Structure
 
 Our documentation is organized into several key areas:
