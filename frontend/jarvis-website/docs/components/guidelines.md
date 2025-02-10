@@ -4,54 +4,51 @@ This document outlines the standards and best practices for creating and maintai
 
 ## Component Organization
 
-Components are organized into three main categories:
+Components are organized in the root `components/` directory:
 
-1. **UI Components** (`components/ui/`)
+1. **Core Components**
    - Basic, reusable UI elements
-   - Examples: Button, Input, Card
+   - Built on top of Material UI components
+   - Examples: CTA, FeatureCard, Hero
    - Should be highly reusable and customizable
 
-2. **Layout Components** (`components/layout/`)
-   - Page structure components
-   - Examples: Header, Footer, Sidebar
-   - Should be consistent across pages
-
-3. **Feature Components** (`components/features/`)
-   - Feature-specific components
-   - Examples: UserProfile, DocumentViewer
-   - Can be more specialized and less reusable
+2. **Page Components**
+   - Components specific to certain pages/routes
+   - Composed of core components and Material UI components
+   - Can be more specialized
 
 ## Component Structure
 
 ```typescript
 // Example component structure
 import { type FC } from 'react'
-import { cn } from '@/lib/utils'
+import { Box, Typography, Button } from '@mui/material'
 
-interface ButtonProps {
-  variant?: 'primary' | 'secondary'
-  size?: 'sm' | 'md' | 'lg'
-  children: React.ReactNode
-  className?: string
+interface CTAProps {
+  title: string
+  description: string
+  buttonText: string
+  sx?: SxProps
 }
 
-export const Button: FC<ButtonProps> = ({
-  variant = 'primary',
-  size = 'md',
-  children,
-  className,
+export const CTA: FC<CTAProps> = ({
+  title,
+  description,
+  buttonText,
+  sx,
 }) => {
   return (
-    <button
-      className={cn(
-        'base-styles',
-        variantStyles[variant],
-        sizeStyles[size],
-        className
-      )}
-    >
-      {children}
-    </button>
+    <Box sx={{ textAlign: 'center', py: 8, ...sx }}>
+      <Typography variant="h2" component="h2" sx={{ mb: 2 }}>
+        {title}
+      </Typography>
+      <Typography color="text.secondary" sx={{ mb: 4 }}>
+        {description}
+      </Typography>
+      <Button variant="contained" color="primary">
+        {buttonText}
+      </Button>
+    </Box>
   )
 }
 ```
@@ -59,25 +56,25 @@ export const Button: FC<ButtonProps> = ({
 ## Naming Conventions
 
 - Component files: PascalCase (e.g., `Button.tsx`)
-- Component folders: kebab-case (e.g., `user-profile/`)
-- Props interfaces: ComponentNameProps (e.g., `ButtonProps`)
+- Component folders: kebab-case (e.g., `feature-card/`)
+- Props interfaces: ComponentNameProps (e.g., `CTAProps`)
 - Event handlers: handleEventName (e.g., `handleClick`)
 
 ## Props Guidelines
 
 1. Always type props using TypeScript interfaces
 2. Use descriptive prop names
-3. Provide default values where appropriate
+3. Include `sx` prop for style customization when needed
 4. Document complex props
-5. Use children prop for content projection
+5. Use children prop for content projection when appropriate
 
 ## Styling Guidelines
 
-1. Use TailwindCSS for styling
-2. Utilize the `cn()` utility for class merging
-3. Create consistent variants
-4. Support className prop for customization
-5. Follow responsive design principles
+1. Use Material UI's `sx` prop for component styling
+2. Utilize theme tokens for colors, spacing, etc.
+3. Create styled components for reusable styles
+4. Follow Material Design principles
+5. Use Material UI's responsive utilities
 
 ## Component Documentation
 
@@ -92,13 +89,15 @@ Each component should include:
 Example:
 ```typescript
 /**
- * Primary button component with multiple variants and sizes.
+ * Call-to-action component with customizable title, description, and button text.
  * @component
  * @example
  * ```tsx
- * <Button variant="primary" size="md">
- *   Click me
- * </Button>
+ * <CTA
+ *   title="Get Started"
+ *   description="Join us today"
+ *   buttonText="Sign Up"
+ * />
  * ```
  */
 ```

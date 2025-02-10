@@ -6,20 +6,19 @@ The JARVIS website is built using modern web technologies:
 
 - **Next.js 14+**: React framework with server-side rendering capabilities
 - **TypeScript**: For type-safe development
-- **TailwindCSS**: For styling and responsive design
+- **Material UI**: For component library and styling
 - **React**: For component-based UI development
+- **Emotion**: For CSS-in-JS styling
 
 ## Application Structure
 
 ```
-src/
+frontend/jarvis-website/
 ├── app/              # Next.js app router pages and layouts
 ├── components/       # Reusable React components
-│   ├── ui/          # Basic UI components
-│   ├── layout/      # Layout components
-│   └── features/    # Feature-specific components
-├── styles/          # Global styles and Tailwind configuration
-└── lib/            # Shared utilities and helpers
+├── theme/           # Material UI theme configuration
+├── public/          # Static assets
+└── docs/            # Project documentation
 ```
 
 ## Key Architecture Decisions
@@ -31,21 +30,23 @@ src/
    - Optimized image handling
 
 2. **Component Architecture**:
-   - Atomic design principles
+   - Material UI component system
    - Component composition over inheritance
    - Clear separation of concerns
    - Reusable UI components
 
-3. **State Management**:
-   - React hooks for local state
-   - Server components for data fetching
-   - Client components only where necessary
+3. **Styling Approach**:
+   - Material UI's styled-components based system
+   - Custom theme configuration
+   - Responsive design using MUI's breakpoint system
+   - CSS-in-JS with Emotion
 
 4. **Performance Considerations**:
    - Static page generation where possible
    - Image optimization
    - Code splitting
    - Font optimization
+   - Style memoization
 
 ## Security Considerations
 

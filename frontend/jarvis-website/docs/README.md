@@ -8,8 +8,7 @@ This directory contains documentation specific to the JARVIS website frontend im
 docs/
 ├── architecture/       # Architecture decisions and technical specifications
 ├── components/        # Component documentation and usage guides
-├── styles/           # Styling guidelines and theme documentation
-└── deployment/       # Deployment procedures and configurations
+└── styles/           # Styling guidelines and theme documentation
 ```
 
 ## Documentation Guidelines
@@ -25,6 +24,18 @@ docs/
 - [Architecture Overview](./architecture/overview.md)
 - [Component Guidelines](./components/guidelines.md)
 - [Styling Guide](./styles/guidelines.md)
-- [Deployment Guide](./deployment/guide.md)
 
-For contributing to documentation, please follow the [project-wide documentation standards](../../../../docs/technical/development-standards.md). 
+## Project Structure
+
+The main project structure is organized as follows:
+
+```
+frontend/jarvis-website/
+├── app/              # Next.js app router pages and layouts
+├── components/       # React components
+├── theme/           # Theme configuration
+├── docs/            # Documentation
+└── public/          # Static assets
+```
+
+For contributing to documentation, please follow our [contributing guidelines](../../../docs/contributing.md). 
