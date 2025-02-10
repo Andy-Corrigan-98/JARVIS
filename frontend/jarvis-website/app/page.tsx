@@ -1,27 +1,26 @@
 import { Box } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
-import CodeIcon from '@mui/icons-material/Code';
-import BoltIcon from '@mui/icons-material/Bolt';
-import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
+import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
+import BuildIcon from '@mui/icons-material/Build';
 import theme from '../theme/theme';
 import Hero from '../components/Hero';
 import FeatureCard from '../components/FeatureCard';
-import CallToAction from '../components/CTA';
 
 export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ minHeight: '100vh', bgcolor: 'grey.50' }}>
         <Hero
-          title="Welcome to JARVIS"
-          subtitle="Your intelligent assistant for seamless development and productivity"
+          title="JARVIS"
+          subtitle="An intelligent assistant focused on accessible and inclusive development"
           primaryAction={{
-            text: "Get Started",
-            href: "/get-started"
-          }}
-          secondaryAction={{
             text: "Documentation",
             href: "/docs"
+          }}
+          secondaryAction={{
+            text: "GitHub",
+            href: "https://github.com/Andy-Corrigan-98/JARVIS"
           }}
         />
 
@@ -36,9 +35,9 @@ export default function Home() {
               px: 4,
             }}
           >
-            {features.map((feature, index) => (
+            {features.map((feature) => (
               <FeatureCard
-                key={index}
+                key={feature.title.toLowerCase().replace(/\s+/g, '-')}
                 title={feature.title}
                 description={feature.description}
                 icon={feature.icon}
@@ -46,15 +45,6 @@ export default function Home() {
             ))}
           </Box>
         </Box>
-
-        <CallToAction
-          title="Ready to Get Started?"
-          description="Join thousands of developers who are already using JARVIS to enhance their workflow."
-          action={{
-            text: "Start Free Trial",
-            href: "/signup"
-          }}
-        />
       </Box>
     </ThemeProvider>
   );
@@ -62,18 +52,18 @@ export default function Home() {
 
 const features = [
   {
-    title: "Smart Automation",
-    description: "Automate repetitive tasks and streamline your development workflow with AI-powered assistance.",
-    icon: <CodeIcon />,
+    title: "Project Vision",
+    description: "Building an intelligent development assistant that emphasizes accessibility and inclusion in the software development process.",
+    icon: <AutoAwesomeIcon />,
   },
   {
-    title: "Intelligent Insights",
-    description: "Get real-time suggestions and insights to improve your code quality and productivity.",
-    icon: <BoltIcon />,
+    title: "Core Principles",
+    description: "Focused on creating an accessible, inclusive, and efficient development environment that benefits all developers.",
+    icon: <AccessibilityNewIcon />,
   },
   {
-    title: "Seamless Integration",
-    description: "Easily integrate with your existing tools and workflows for a smooth development experience.",
-    icon: <IntegrationInstructionsIcon />,
+    title: "Development Philosophy",
+    description: "Iterative development with a strong emphasis on community feedback and continuous improvement.",
+    icon: <BuildIcon />,
   },
 ];
