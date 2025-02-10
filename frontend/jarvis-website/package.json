@@ -5,6 +5,7 @@
   "author": "Andy Corrigan",
   "scripts": {
     "dev": "next dev --turbopack",
+    "buildAndStart": "npm run build && npm start",
     "build": "next build",
     "buildWithTime": "NEXT_PUBLIC_BUILD_TIME=$(date '+%-d %B - %H:%M') next build",
     "start": "next start",
