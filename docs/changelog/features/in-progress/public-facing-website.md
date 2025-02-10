@@ -20,7 +20,7 @@ Currently, the project lacks a dedicated public-facing website to showcase its v
 ### Proposed Solution
 Develop a Next.js-based website that initially runs locally for development purposes. The website features:
 
-- Modern, responsive design using Tailwind CSS
+- Modern, responsive design using Material-UI
 - Homepage featuring:
   - Hero section with project overview and vision
   - Feature cards highlighting key capabilities
@@ -52,7 +52,6 @@ Develop a Next.js-based website that initially runs locally for development purp
 ### Dependencies
 - Node.js
 - Next.js
-- Tailwind CSS
 - TypeScript
 - Development tools (ESLint, Prettier, PostCSS)
 
