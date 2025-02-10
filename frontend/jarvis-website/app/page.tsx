@@ -3,7 +3,7 @@
 import { Box } from '@mui/material';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
-import BuildIcon from '@mui/icons-material/Build';
+import SupportIcon from '@mui/icons-material/Support';
 import Hero from '../components/Hero';
 import FeatureCard from '../components/FeatureCard';
 
@@ -12,7 +12,7 @@ export default function Home() {
     <Box sx={{ minHeight: '100vh', bgcolor: 'grey.50' }}>
       <Hero
         title="JARVIS"
-        subtitle="An intelligent assistant focused on accessible and inclusive development"
+        subtitle="Your personal AI assistant, designed to enhance daily life through accessibility and inclusion"
         primaryAction={{
           text: "Documentation",
           href: "/docs"
@@ -50,18 +50,18 @@ export default function Home() {
 
 const features = [
   {
-    title: "Project Vision",
-    description: "Building an intelligent development assistant that emphasizes accessibility and inclusion in the software development process.",
-    icon: <AutoAwesomeIcon />,
-  },
-  {
-    title: "Core Principles",
-    description: "Focused on creating an accessible, inclusive, and efficient development environment that benefits all developers.",
+    title: "Accessible for Everyone",
+    description: "Designed to enhance independence and quality of life for people with various needs, making technology more accessible and inclusive.",
     icon: <AccessibilityNewIcon />,
   },
   {
-    title: "Development Philosophy",
-    description: "Iterative development with a strong emphasis on community feedback and continuous improvement.",
-    icon: <BuildIcon />,
+    title: "Personal Growth",
+    description: "A supportive companion for your daily life, helping you achieve your goals while maintaining your autonomy and authenticity.",
+    icon: <AutoAwesomeIcon />,
+  },
+  {
+    title: "Community-Driven",
+    description: "Built with and for the community, ensuring privacy, security, and continuous improvement based on real user needs.",
+    icon: <SupportIcon />,
   },
 ];
