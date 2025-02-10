@@ -1,68 +1,78 @@
-# JARVIS Public-Facing Website
+# JARVIS Frontend Website
 
-This repository contains the source code for the JARVIS project's public-facing website. Built with React, this website showcases our project's vision, core principles, and features in a modern, accessible interface.
+This is the public-facing website for the JARVIS project, built with [Next.js](https://nextjs.org) and modern web technologies.
 
-## Project Overview
+## Overview
 
-The JARVIS website serves as the primary platform to:
-- Communicate our project vision and core principles
-- Showcase key features and capabilities
-- Provide easy access to project documentation
-- Foster community engagement and contribution
+The JARVIS Frontend website serves as the main public interface for our project, providing information, documentation, and interactive features for our users.
 
-## Development Setup
+## Technology Stack
+
+- [Next.js](https://nextjs.org) - React framework for production
+- [TailwindCSS](https://tailwindcss.com) - Utility-first CSS framework
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- [Geist Font](https://vercel.com/font) - Modern, optimized typography
+
+## Getting Started
 
 ### Prerequisites
-- Node.js (latest LTS version recommended)
-- npm (comes with Node.js)
 
-### Getting Started
+- Node.js 18.x or later
+- npm or yarn package manager
 
-1. Clone the repository
-2. Navigate to the project directory:
-   ```
-   cd frontend/jarvis-website
-   ```
-3. Install dependencies:
-   ```
-   npm install
-   ```
+### Development Setup
 
-### Available Scripts
+1. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
 
-#### `npm start`
-Runs the app in development mode at [http://localhost:3000](http://localhost:3000).
-The page will automatically reload when you make changes.
+2. Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-#### `npm test`
-Launches the test runner in interactive watch mode.
-
-#### `npm run build`
-Builds the app for production to the `build` folder, optimizing for best performance.
-
-## Project Structure
-
-The website features:
-- Modern, responsive design
-- Clear navigation structure
-- Comprehensive project information
-- Documentation integration
-- Accessibility-first approach
-
-## Contributing
-
-We welcome contributions! Please see our [Contributing Guide](../../docs/contributing.md) for details on how to get involved.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser to view the site.
 
 ## Development Standards
 
-This project follows established development standards and best practices. For more information, please refer to our [Development Standards](../../docs/technical/development-standards.md) documentation.
+This project follows the JARVIS development standards:
+- SOLID principles implementation
+- Consistent code organization
+- TypeScript for type safety
+- Component-based architecture
+- Comprehensive documentation
 
-## Learn More
+## Project Structure
 
-- [Project Documentation](../../docs/)
-- [Technical Documentation](../../docs/technical/)
-- [Changelog](../../docs/changelog/)
+```
+jarvis-website/
+├── app/           # Next.js app directory
+├── docs/          # Documentation specific to this project
+├── components/    # Reusable React components
+├── styles/        # Global styles and Tailwind config
+├── public/        # Static assets
+└── tests/         # Test files
+```
 
-## License
+## Contributing
 
-[Add your license information here]
+Please refer to the main project's [contributing guidelines](../../../docs/contributing.md) for details on our development process and standards.
+
+## Documentation
+
+- For detailed documentation, see the [docs](../../../docs) directory
+- Component documentation can be found in the respective component directories
+- API documentation is available in the [technical documentation](../../../docs/technical)
+
+## Build and Deployment
+
+The website is configured for deployment on [Vercel](https://vercel.com). For other deployment options, refer to the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
+
+## Support
+
+For issues and feature requests, please use the GitHub issue tracker.
